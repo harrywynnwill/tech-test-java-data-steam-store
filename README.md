@@ -32,10 +32,10 @@ Keep in mind that we love testable code which can be run easily. Don’t worry i
 
 Write a java standalone application with the following requirements and characteristics:
 
-1) GreedyDB will expose a REST endpoint `(/import/{streamName})` that will allow to import a single JSON event, where {feedName} is the name of the feed.
-2) GreedyDB will expose a REST endpoint `(/query/{streamName}/{timestamp}/{jsonPath}) `that will return the value of the field specified with the JSON Path for the given stream on a given timestamp.
-3) GreedyDB will expose a REST endpoint `(/query/{streamName}/latest/{jsonPath})` that will return the latest value of the field specified with the JSON Path for the given stream.
-4) GreedyDB will expose a REST endpoint `(/query/{streamName}/oldest/{jsonPath})` that will return the oldest value of the field specified with the JSON Path for the given stream.
+1. GreedyDB will expose a REST endpoint `(/import/{streamName})` that will allow to import a single JSON event, where {feedName} is the name of the feed.
+2. GreedyDB will expose a REST endpoint `(/query/{streamName}/{timestamp}/{jsonPath}) `that will return the value of the field specified with the JSON Path for the given stream on a given timestamp.
+3. GreedyDB will expose a REST endpoint `(/query/{streamName}/latest/{jsonPath})` that will return the latest value of the field specified with the JSON Path for the given stream.
+4. GreedyDB will expose a REST endpoint `(/query/{streamName}/oldest/{jsonPath})` that will return the oldest value of the field specified with the JSON Path for the given stream.
 
 It’s up to you how to model errors with HTTP status codes. For example if a stream is not found, the query endpoints should return a 404.
 
